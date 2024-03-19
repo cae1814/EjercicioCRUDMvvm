@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioCRUDMvvm.Views.AddEstudiantePage"
+             xmlns:viewModels="clr-namespace:EjercicioCRUDMvvm.ViewModels"
+             x:DataType="viewModels:AddEstudiantePageViewModel"
+             Title="Agregar Estudiante" >
+    
+    <VerticalStackLayout Padding="30,10,30,10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Nombre completo:" />
+        <Entry Text="{Binding Nombre}" Keyboard="Text" Placeholder="Ingrese el nombre" FontSize="16" TextColor="#848484" />
+
+        <Label Text="Identidad:" />
+        <Entry Text="{Binding Identidad}" Keyboard="Text" Placeholder="Ingrese DNI" FontSize="16" TextColor="#848484" />
+
+        <Label Text="Fecha de Nacimiento:" />
+        <Entry Text="{Binding FechaNacimiento}" Keyboard="Text" Placeholder="Fecha de Nacimiento" FontSize="16" TextColor="#848484" />
+
+        <Label Text="Fecha de Ingreso:" />
+        <Entry Text="{Binding FechaIngreso}" Keyboard="Text" Placeholder="Fecha de Ingreso" FontSize="16" TextColor="#848484"/>
+
+        <Label Text="Dirección:" />
+        <Entry Text="{Binding Direccion}" Keyboard="Text" Placeholder="Ingrese la dirección" FontSize="16" TextColor="#848484" />
+
+        <Label Text="Nombre del Padre:" />
+        <Entry Text="{Binding NombrePadre}" Keyboard="Text" Placeholder="Nombre del padre" FontSize="16" TextColor="#848484" />
+
+        <Label Text="Nombre de la Madre:" />
+        <Entry Text="{Binding NombreMadre}" Keyboard="Text" Placeholder="Nombre de la madre" FontSize="16" TextColor="#848484"/>
+        
+        <Button Text="Guardar" x:Name="btnGuardar" Command="{Binding AddUpdateCommand}" BackgroundColor="#0080FF" FontSize="16" TextColor="#FFFFFF" />
+    </VerticalStackLayout>
+</ContentPage>

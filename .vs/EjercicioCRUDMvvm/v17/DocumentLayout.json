@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|c:\\users\\claro\\desktop\\hoyta\\ejerciciocrudmvvm\\views\\estudiantemainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|solutionrelative:views\\estudiantemainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|c:\\users\\claro\\desktop\\hoyta\\ejerciciocrudmvvm\\views\\addestudiantepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|solutionrelative:views\\addestudiantepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|c:\\users\\claro\\desktop\\hoyta\\ejerciciocrudmvvm\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873689E7-A240-4C37-AF5D-CEFC84E876D0}|EjercicioCRUDMvvm.csproj|solutionrelative:models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEstudiantePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Views\\AddEstudiantePage.xaml",
+              "RelativeDocumentMoniker": "Views\\AddEstudiantePage.xaml",
+              "ToolTip": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Views\\AddEstudiantePage.xaml",
+              "RelativeToolTip": "Views\\AddEstudiantePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T03:09:56.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Models\\Estudiante.cs",
+              "RelativeDocumentMoniker": "Models\\Estudiante.cs",
+              "ToolTip": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Models\\Estudiante.cs",
+              "RelativeToolTip": "Models\\Estudiante.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T01:30:12.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstudianteMainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Views\\EstudianteMainPage.xaml",
+              "RelativeDocumentMoniker": "Views\\EstudianteMainPage.xaml",
+              "ToolTip": "C:\\Users\\Claro\\Desktop\\HOYTA\\EjercicioCRUDMvvm\\Views\\EstudianteMainPage.xaml",
+              "RelativeToolTip": "Views\\EstudianteMainPage.xaml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAChAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T01:25:38.411Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

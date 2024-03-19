@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioCRUDMvvm.Views.EstudianteMainPage"
+             xmlns:viewModel="clr-namespace:EjercicioCRUDMvvm.ViewModels"
+             x:DataType="viewModel:EstudianteMainPageViewModel"
+             xmlns:models="clr-namespace:EjercicioCRUDMvvm.Models"
+             Title="Lista de Estudiantes">
+    <ScrollView>
+        <VerticalStackLayout Padding="10,0,10,0">
+            <Button Text="Agregar Estudiante" HorizontalOptions="Start" Command="{Binding GoToAddEstudiantesPageCommand}" BackgroundColor="#0080FF" FontSize="16" />
+
+            <Grid Margin="0,5,0,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*">
+                <Label Text="Nombre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" FontSize="16" />
+                <Label Text="Identidad" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+            <Grid Margin="0,5,0,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*">
+                <Label Text="Fecha Nacimiento" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Fecha Ingreso" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+            <Grid Margin="0,5,0,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*">
+                <Label Text="Dirección" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" />
+            </Grid>
+            <Grid Margin="0,5,0,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*">
+                <Label Text="Nombre Padre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Nombre Madre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+    
+            <CollectionView ItemsSource="{Binding EstudianteCollection}" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Estudiante">
+                        <Grid RowSpacing="0" RowDefinitions="10,Auto,10,0.5" ColumnDefinitions="33*,33*,33*" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding Nombre}" Grid.Row="1" Grid.Column="0" />
+                            <Label Text="{Binding Identidad}" Grid.Row="1" Grid.Column="1" />
+                            <Label Text="{Binding FechaNacimiento}" Grid.Row="1" Grid.Column="2" />
+                            <Label Text="{Binding FechaIngreso}" Grid.Row="1" Grid.Column="3" />
+                            <Label Text="{Binding Direccion}" Grid.Row="1" Grid.Column="4" />
+                            <Label Text="{Binding NombrePadre}" Grid.Row="1" Grid.Column="5" />
+                            <Label Text="{Binding NombreMadre}" Grid.Row="1" Grid.Column="6" />
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:EstudianteMainPageViewModel}},Path=SelectEstudianteCommand}" CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

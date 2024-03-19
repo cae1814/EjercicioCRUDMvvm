@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EjercicioCRUDMvvm</name>
+    </assembly>
+    <members>
+        <member name="T:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.AddUpdate">
+            <summary>
+            Agrega o actualiza un registro
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Validar(EjercicioCRUDMvvm.Models.Estudiante)">
+            <summary>
+            Valida que los campos no esten vacíos
+            </summary>
+            <param name="Estudiante">Objeto a validar</param>
+            <returns></returns>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Alerta(System.String,System.String)">
+            <summary>
+            Método personalizado para construir alertas
+            </summary>
+            <param name="Tipo">Tipo de Alerta</param>
+            <param name="Mensaje">Mensaje de Alerta</param>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Id">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.id"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Nombre">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.nombre"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Identidad">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.identidad"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.FechaNacimiento">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.fechaNacimiento"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.FechaIngreso">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.fechaIngreso"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.Direccion">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.direccion"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.NombrePadre">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.nombrePadre"/>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.NombreMadre">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.nombreMadre"/>
+        </member>
+        <member name="F:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.addUpdateCommand">
+            <summary>The backing field for <see cref="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.AddUpdateCommand"/>.</summary>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.AddUpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.AddEstudiantePageViewModel.AddUpdate"/>.</summary>
+        </member>
+        <member name="T:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GetAll">
+            <summary>
+            Obtiene el listado de Estudiantes
+            </summary>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPage">
+            <summary>
+            Redirecciona al formulario de Estudiantes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantes(EjercicioCRUDMvvm.Models.Estudiante)">
+            <summary>
+            Selecciona el registro para editar o eliminar
+            </summary>
+            <param name="estudiante">Objeto a editar o eliminar</param>
+            <returns>Actualizar: Nos lleva al formulario de Empleado, Eliminar: Elimina el registro</returns>
+        </member>
+        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.Alerta(System.String,System.String)">
+            <summary>
+            Método personalizado para construir alertas
+            </summary>
+            <param name="Tipo">Tipo de Alerta</param>
+            <param name="Mensaje">Mensaje de Alerta</param>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.EstudianteCollection">
+            <inheritdoc cref="F:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.estudianteCollection"/>
+        </member>
+        <member name="F:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.goToAddEstudiantesPageCommand">
+            <summary>The backing field for <see cref="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPageCommand"/>.</summary>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPage"/>.</summary>
+        </member>
+        <member name="F:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.selectEstudiantesCommand">
+            <summary>The backing field for <see cref="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantesCommand"/>.</summary>
+        </member>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantes(EjercicioCRUDMvvm.Models.Estudiante)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Identidad">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Identidad" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FechaNacimiento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FechaNacimiento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FechaIngreso">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FechaIngreso" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NombrePadre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NombrePadre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NombreMadre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NombreMadre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EstudianteCollection">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EstudianteCollection" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Identidad">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Identidad" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FechaNacimiento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FechaNacimiento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FechaIngreso">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FechaIngreso" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NombrePadre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NombrePadre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NombreMadre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NombreMadre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EstudianteCollection">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EstudianteCollection" generated properties.</summary>
+        </member>
+    </members>
+</doc>
