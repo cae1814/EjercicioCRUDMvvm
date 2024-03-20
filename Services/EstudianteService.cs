@@ -9,9 +9,17 @@ namespace EjercicioCRUDMvvm.Services
 
         public EstudianteService()
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Instituto.db3");
-            _dbConnection = new SQLiteConnection(dbPath);
-            _dbConnection.CreateTable<Estudiante>();
+            try
+            {
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Instituto.db3");
+                _dbConnection = new SQLiteConnection(dbPath);
+                _dbConnection.CreateTable<Estudiante>();
+
+            } catch (Exception ex)
+            {
+                // Handle the exception (e.g., log it or display an error message)
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
 
         public List<Estudiante> GetAll()

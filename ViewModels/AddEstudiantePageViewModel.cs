@@ -43,7 +43,7 @@ namespace EjercicioCRUDMvvm.ViewModels
             Nombre = estudiante.Nombre;
             Identidad = estudiante.Identidad;
             FechaNacimiento = estudiante.FechaNacimiento;
-            FechaIngreso = estudiante.FechaNacimiento;
+            FechaIngreso = estudiante.FechaIngreso;
             Direccion = estudiante.Direccion;
             NombrePadre = estudiante.NombrePadre;
             NombreMadre = estudiante.NombreMadre;
@@ -63,9 +63,13 @@ namespace EjercicioCRUDMvvm.ViewModels
                 Estudiante estudiante = new Estudiante
                 {
                     Nombre = Nombre,
-                    //Email = Email,
                     Direccion = Direccion,
-                    Id = Id
+                    Id = Id,
+                    Identidad = Identidad,
+                    NombreMadre = NombreMadre,
+                    NombrePadre = NombrePadre,
+                    FechaIngreso = FechaIngreso,
+                    FechaNacimiento = FechaNacimiento
                 };
 
                 if (Validar(estudiante))
@@ -101,11 +105,11 @@ namespace EjercicioCRUDMvvm.ViewModels
                     Alerta("ADVERTENCIA", "Escriba el nombre completo");
                     return false;
                 }
-                /*else if (Empleado.Email == null || Empleado.Email == "")
+                else if (estudiante.Identidad == null || estudiante.Identidad == "")
                 {
                     Alerta("ADVERTENCIA", "Escriba el correo electrónico");
                     return false;
-                }*/
+                }
                 else if (estudiante.Direccion == null || estudiante.Direccion == "")
                 {
                     Alerta("ADVERTENCIA", "Escriba la dirección");
