@@ -74,7 +74,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantes(EjercicioCRUDMvvm.Models.Estudiante)">
+        <member name="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiante(EjercicioCRUDMvvm.Models.Estudiante)">
             <summary>
             Selecciona el registro para editar o eliminar
             </summary>
@@ -97,11 +97,11 @@
         <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPageCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.GoToAddEstudiantesPage"/>.</summary>
         </member>
-        <member name="F:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.selectEstudiantesCommand">
-            <summary>The backing field for <see cref="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantesCommand"/>.</summary>
+        <member name="F:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.selectEstudianteCommand">
+            <summary>The backing field for <see cref="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudianteCommand"/>.</summary>
         </member>
-        <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantesCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiantes(EjercicioCRUDMvvm.Models.Estudiante)"/>.</summary>
+        <member name="P:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudianteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EjercicioCRUDMvvm.ViewModels.EstudianteMainPageViewModel.SelectEstudiante(EjercicioCRUDMvvm.Models.Estudiante)"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>

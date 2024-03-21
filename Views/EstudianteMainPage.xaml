@@ -8,35 +8,25 @@
              Title="Lista de Estudiantes">
     <ScrollView>
         <VerticalStackLayout Padding="10,0,10,0">
-            <Button Text="Agregar Estudiante" HorizontalOptions="Start" Command="{Binding GoToAddEstudiantesPageCommand}" BackgroundColor="#0080FF" FontSize="13" />
+            <Button Text="Agregar Estudiante" HorizontalOptions="Start" Command="{Binding GoToAddEstudiantesPageCommand}" BackgroundColor="#0080FF" FontSize="12" />
 
-            
-
+            <Grid Margin="10,20,10,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*,33*,33*" >
+                <Label Text="Nombre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" FontSize="11" TextColor="#6E6E6E" />
+                <Label Text="Identidad" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" FontSize="11" TextColor="#6E6E6E"/>
+                <Label Text="Nacimiento" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2" FontSize="11" TextColor="#6E6E6E"/>
+                <Label Text="Ingreso" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="3" FontSize="11" TextColor="#6E6E6E" />
+                <Label Text="Padre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="4" FontSize="11" TextColor="#6E6E6E"/>
+            </Grid>
             <CollectionView ItemsSource="{Binding EstudianteCollection}" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Estudiante">
-                        <Grid RowSpacing="20" RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto" VerticalOptions="FillAndExpand">
-                            <Label Text="Nombre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding Nombre}" Grid.Row="0" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
+                        <Grid RowSpacing="0" RowDefinitions="10,Auto,10,0.5" ColumnDefinitions="33*,33*,33*,33*,33*" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding Nombre}" Grid.Row="1" Grid.Column="0" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding Identidad}" Grid.Row="1" Grid.Column="1" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding FechaNacimiento}" Grid.Row="1" Grid.Column="2" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding FechaIngreso}" Grid.Row="1" Grid.Column="3" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding NombrePadre}" Grid.Row="1" Grid.Column="4" FontSize="10" TextColor="#6E6E6E" />
 
-                            <Label Text="Identidad" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="1" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding Identidad}" Grid.Row="1" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
-
-                            <Label Text="Fecha Nacimiento" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding FechaNacimiento}" Grid.Row="2" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
-
-                            <Label Text="Fecha Ingreso" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding FechaIngreso}" Grid.Row="3" Grid.Column="1" FontSize="13" TextColor="#6E6E6E" Margin="10, 10, 10, 10"/>
-
-                            <Label Text="Dirección" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding Direccion}" Grid.Row="4" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
-
-                            <Label Text="Padre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="5" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding NombrePadre}" Grid.Row="5" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
-
-                            <Label Text="Madre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="0" FontSize="12" TextColor="#848484" />
-                            <Label Text="{Binding NombreMadre}" Grid.Row="6" Grid.Column="1" FontSize="13" TextColor="#6E6E6E"/>
-                           
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:EstudianteMainPageViewModel}},Path=SelectEstudianteCommand}" CommandParameter="{Binding .}" />
                             </Grid.GestureRecognizers>

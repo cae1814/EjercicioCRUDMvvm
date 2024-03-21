@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EjercicioCRUDMvvm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7fc78ddb2d8022ae069aa2591f6196c1f8c95dbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b93060620432024c02929a3cf2cfe09f6b9d41cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("EjercicioCRUDMvvm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EjercicioCRUDMvvm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

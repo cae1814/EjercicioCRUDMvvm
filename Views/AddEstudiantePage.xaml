@@ -7,26 +7,26 @@
              Title="Agregar Estudiante" >
     
     <VerticalStackLayout Padding="30,10,30,10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
-        <Label Text="Nombre completo:" />
-        <Entry Text="{Binding Nombre}" Keyboard="Text" Placeholder="Ejemplo: Juan Antonio Hernandez" FontSize="12" TextColor="#848484" />
+        <Label Text="Nombre completo:" FontSize="13" TextColor="#848484" />
+        <Entry Text="{Binding Nombre}" Keyboard="Text" Placeholder="Ejemplo: Juan Antonio Hernandez" FontSize="11" TextColor="#848484" />
 
-        <Label Text="Identidad:" />
-        <Entry Text="{Binding Identidad}" Keyboard="Text" Placeholder="Ejemplo: 1503198232111" FontSize="12" TextColor="#848484" />
+        <Label Text="Identidad:" FontSize="13" TextColor="#848484"/>
+        <Entry Text="{Binding Identidad}" Keyboard="Text" Placeholder="Ejemplo: 1503198232111" FontSize="11" TextColor="#848484" />
 
-        <Label Text="Fecha de Nacimiento:" />
-        <Entry Text="{Binding FechaNacimiento}" Keyboard="Text" Placeholder="Formado DD/MM/YYYY" FontSize="12" TextColor="#848484" />
+        <Label Text="Fecha de Nacimiento:" FontSize="13" TextColor="#848484" />
+        <Entry Text="{Binding FechaNacimiento}" Keyboard="Text" Placeholder="Formado DD/MM/YYYY" FontSize="11" TextColor="#848484" />
 
-        <Label Text="Fecha de Ingreso:" />
-        <Entry Text="{Binding FechaIngreso}" Keyboard="Text" Placeholder="Formado DD/MM/YYYY" FontSize="12" TextColor="#848484"/>
+        <Label Text="Fecha de Ingreso:" FontSize="13" TextColor="#848484" />
+        <Entry Text="{Binding FechaIngreso}" Keyboard="Text" Placeholder="Formado DD/MM/YYYY" FontSize="11" TextColor="#848484"/>
 
-        <Label Text="Dirección:" />
-        <Entry Text="{Binding Direccion}" Keyboard="Text" Placeholder="Departamentos, Municipio, Ciudad" FontSize="12" TextColor="#848484" />
+        <Label Text="Dirección:" FontSize="13" TextColor="#848484"/>
+        <Entry Text="{Binding Direccion}" Keyboard="Text" Placeholder="Departamentos, Municipio, Ciudad" FontSize="11" TextColor="#848484" />
 
-        <Label Text="Nombre del Padre:" />
-        <Entry Text="{Binding NombrePadre}" Keyboard="Text" Placeholder="Ejemplo: Juan Orlando Hernandez" FontSize="12" TextColor="#848484" />
+        <Label Text="Nombre del Padre:" FontSize="13" TextColor="#848484" />
+        <Entry Text="{Binding NombrePadre}" Keyboard="Text" Placeholder="Ejemplo: Juan Orlando Hernandez" FontSize="11" TextColor="#848484" />
 
-        <Label Text="Nombre de la Madre:" />
-        <Entry Text="{Binding NombreMadre}" Keyboard="Text" Placeholder="Ejemplo: Juan Orlandina Maradiaga" FontSize="12" TextColor="#848484"/>
+        <Label Text="Nombre de la Madre:" FontSize="13" TextColor="#848484" />
+        <Entry Text="{Binding NombreMadre}" Keyboard="Text" Placeholder="Ejemplo: Juan Orlandina Maradiaga" FontSize="11" TextColor="#848484"/>
         
         <Button Text="Guardar" x:Name="btnGuardar" Command="{Binding AddUpdateCommand}" BackgroundColor="#0080FF" FontSize="16" TextColor="#FFFFFF" />
     </VerticalStackLayout>

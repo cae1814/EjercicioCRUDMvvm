@@ -52,7 +52,7 @@ namespace EjercicioCRUDMvvm.ViewModels
         /// <param name="estudiante">Objeto a editar o eliminar</param>
         /// <returns>Actualizar: Nos lleva al formulario de Empleado, Eliminar: Elimina el registro</returns>
         [RelayCommand]
-        private async Task SelectEstudiantes(Estudiante estudiante)
+        private async Task SelectEstudiante(Estudiante estudiante)
         {
             try
             {

@@ -62,9 +62,9 @@ namespace EjercicioCRUDMvvm.ViewModels
             {
                 Estudiante estudiante = new Estudiante
                 {
+                    Id = Id,
                     Nombre = Nombre,
                     Direccion = Direccion,
-                    Id = Id,
                     Identidad = Identidad,
                     NombreMadre = NombreMadre,
                     NombrePadre = NombrePadre,
